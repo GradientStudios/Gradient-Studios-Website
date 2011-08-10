@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gradient Studios</title>
+    <link rel="stylesheet" href="/css/master.css" type="text/css" media="screen" title="no title" charset="utf-8">
+    <script type="text/javascript" charset="utf-8" src="js/analytics.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/jquery.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/konami.js"></script>
+    <script type="text/javascript">
+        konami = new Konami()
+        konami.code = function() {
+            $("div#pic").fadeIn("slow");
+        }
+        konami.load()
+        
+        $("div#pic").click(function () { 
+              $(this).fadeOut(); 
+        });
+    </script>
+</head>
+<body>
+    <div id="pic"><img src="images/gradient.png" alt="Group photo of Gradient Studios employees"></div>
+    <div id="center">
+        <img src="images/logo.png" alt="Gradient Studios Logo">
+        <div id="text">
+            <div class="textblock">
+                We live and work in <a href="http://maps.google.com/maps?q=355+Congress+St,+Boston,+MA+02210" target="_blank">Boston, MA</a>.<br>
+                We build applications for mobile devices and the web.<br>
+                We go native and cross-platform.<br>
+                We <a href="http://weblog.bocoup.com/category/fieldrunners" target="_blank">port</a> to and from HTML5/JavaScript.<br>
+                We <a class="red" href="http://nyx.gradient-studios.com" target="_blank">love</a> building games.<br>
+            </div>
+            <div class="textblock">
+                Need help building software for iOS (iPod, iPhone, and iPad), Android, or the web?<br>
+                <a href="mailto:contact@gradient-studios.com">contact@gradient-studios.com</a>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        &uarr;&nbsp;&uarr;&nbsp;&darr;&nbsp;&darr;&nbsp;&larr;&nbsp;&rarr;&nbsp;&larr;&nbsp;&rarr;&nbsp;b&nbsp;a&nbsp;&crarr;
+    </div>
+    <script type="text/javascript">
+        $("div#pic").click(function () { 
+              $(this).fadeOut(); 
+        });
+    </script>
+</body>
+</html>
