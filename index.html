@@ -2,21 +2,11 @@
 <html>
 <head>
     <title>Gradient Studios</title>
-    <link rel="stylesheet" href="/css/master.css" type="text/css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="/css/index.css" type="text/css" media="screen" title="no title" charset="utf-8">
     <script type="text/javascript" charset="utf-8" src="js/analytics.js"></script>
     <script type="text/javascript" charset="utf-8" src="js/jquery.min.js"></script>
     <script type="text/javascript" charset="utf-8" src="js/konami.js"></script>
-    <script type="text/javascript">
-        konami = new Konami()
-        konami.code = function() {
-            $("div#pic").fadeIn("slow");
-        }
-        konami.load()
-        
-        $("div#pic").click(function () { 
-              $(this).fadeOut(); 
-        });
-    </script>
+    <script type="text/javascript" charset="utf-8" src="js/index.js"></script>
 </head>
 <body>
     <div id="pic"><img src="images/gradient.png" alt="Group photo of Gradient Studios employees"></div>
@@ -39,10 +29,5 @@
     <div id="footer">
         &uarr;&nbsp;&uarr;&nbsp;&darr;&nbsp;&darr;&nbsp;&larr;&nbsp;&rarr;&nbsp;&larr;&nbsp;&rarr;&nbsp;b&nbsp;a&nbsp;&crarr;
     </div>
-    <script type="text/javascript">
-        $("div#pic").click(function () { 
-              $(this).fadeOut(); 
-        });
-    </script>
 </body>
 </html>
