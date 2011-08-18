@@ -1,0 +1,70 @@
+html, body {
+    margin: 0; 
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-family: sans-serif;
+    background: #cccccc url(../images/background.png);*/
+    /*background-color: #cccccc;*/
+}
+
+a {
+  text-decoration: none;
+  border-bottom: 1px dotted;
+  font-weight: bold;
+  color: black;
+}
+
+a:hover {
+  border: none;
+}
+
+div#center {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 12px;
+  width: 600px;
+}
+
+ul {
+  color: white;
+  margin: 0px;
+  padding: 0px;
+  
+  position: relative;
+}
+
+li {
+  list-style: none;
+  display: inline-block;
+  
+  height: 182px;
+  width: 182px;
+  line-height: 182px;
+  
+  margin: 6px;
+  background-color: rgba(35,31,32,0.6);
+  filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#99191617', EndColorStr='#99191617');
+  
+  /* for IE */
+  /*filter:alpha(opacity=60);*/
+  /* CSS3 standard */
+  /*opacity:0.6;*/
+  
+  border-bottom: 1px white solid;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  border-radius: 12px 12px 12px 12px;
+  
+  position: relative;
+}
+
+li img {
+  vertical-align: top;
+  padding: 10px;
+  
+  position: absolute; 
+  top: 0; 
+  left: 0;
+}
