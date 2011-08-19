@@ -5,24 +5,23 @@ $(document).ready(function() {
   var tran = [-334, -167, 0, 167, 334];
   var toggle = true;
   
-  var kiterator = Math.floor(Math.random()*4);
-  $("li").each(function() {
-    var imgs = '<img src="http://placekitten.com/'+imgSize+'/'+imgSize+'?image='+kiterator+'" alt="">';
-    for(var i=0; i < 4; i++) {
-      imgs += '\n                <img src="http://placekitten.com/'+imgSize+'/'+imgSize+'?image='+(kiterator+i+1)+'" alt="">';
+  var start = Math.floor(Math.random()*4);
+  $("li").each(function(index) {
+    var imgs = '';
+    for(var i=0; i < 5; i++) {
+      imgs += '\n                ';
+      imgs += '<img src="http://placekitten.com/'+imgSize+'/'+imgSize+'?image='+(index+start+i+1)+'" alt="">';
     }
+    imgs += '\n            ';
     $(this).html(imgs);
-    kiterator++;
   });
   
   $("li img").css('opacity', '0.6');
 
   $("li").each(function() {
-    var z = 0;
-    $(this).find("img").each(function() {
-      $(this).css('z-index', z);
-      $(this).css('rotate', rot[z]+'deg');
-      z++;
+    $(this).find("img").each(function(index) {
+      $(this).css('z-index', index);
+      $(this).css('rotate', rot[index]+'deg');
     });
   });
 
@@ -39,16 +38,19 @@ $(document).ready(function() {
   });
 
   function folder(object, unfold) {
-    var z = 0;
-    object.parent().find("img").each(function() {
+    object.parent().find("img").each(function(index, element) {
       if(unfold) {
-        $(this).css('z-index', "+=5");
-        $(this).animate({opacity: '1.0', rotate: '0deg', translateX: tran[z]+'px'}, 500);
+        $(this).css('z-index', "5");
+        $(this).animate({opacity: '1.0', rotate: '0deg'}, 100, function() {
+          $(element).animate({translateX: tran[index]+'px'},500);
+        });
+        
       } else {
-        var dis = $(this);
-        dis.animate({opacity: '0.6', rotate: rot[z]+'deg', translateX: '0px'}, 500, function(){dis.css('z-index', z)});
+        $(this).animate({opacity: '0.6', translateX: '0px'}, 500, function() {
+          $(element).animate({rotate: rot[index]+'deg'},100);
+          $(element).css('z-index', index);
+        });
       }
-      z++;
     });
   }
 
