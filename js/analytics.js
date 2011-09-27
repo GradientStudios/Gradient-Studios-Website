@@ -1,5 +1,6 @@
 var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-20856190-1']);
+_gaq.push(['_setDomainName', '.gradient-studios.com']);
 _gaq.push(['_trackPageview']);
 
 (function() {
