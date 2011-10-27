@@ -1,0 +1,220 @@
+html, body {
+  margin: 0; 
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-family: sans-serif;
+  background: #cccccc url(../images/background.png);*/
+  /*background-color: #cccccc;*/
+}
+
+a {
+  text-decoration: none;
+  border-bottom: 1px dotted;
+  font-weight: bold;
+  color: black;
+}
+
+a:hover {
+  border: none;
+}
+
+div {
+  text-shadow: 0px 1px 0px #f5f5ff;
+  filter: dropshadow(color=#f5f5ff,offX=0,offY=1);
+  line-height: 1.3em;
+  color: #000;
+}
+
+span.name {
+  font-weight: bold;
+}
+
+div#center {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 12px;
+  width: 656px;
+}
+
+div#companyBio {
+/*  border: 1px solid black;*/
+  padding: 12px 0 12px 0;
+  margin: 0 0 12px 0;
+  text-align: left;
+}
+
+div.bio img {
+  border-radius: 12px;
+  -moz-border-radius: 12px;
+  -webkit-border-radius: 12px;
+}
+
+div.bio {
+/*  border: 1px solid black;*/
+  padding: 12px 0 12px 12px;
+  margin: 0 0 12px 0;
+  text-align: left;
+}
+
+div.odd {
+  border-radius: 24px;
+  -moz-border-radius: 24px;
+  -webkit-border-radius: 24px;
+  
+  /* webkit */
+  background-image: -webkit-gradient(
+    linear, right top, left top, 
+    from(rgba(180, 180, 180, 0)), 
+    to(rgba(180, 180, 180, 1.0))
+  );
+  
+  /* mozilla - FF3.6+ */
+  background-image: -moz-linear-gradient(
+    right center,
+    rgba(180, 180, 180, 0) 20%, 
+    rgba(180, 180, 180, 1.0) 95%
+  );
+
+  /* IE 5.5 - 7 */
+  filter: progid:DXImageTransform.Microsoft.gradient(
+    gradientType=1, startColor=#B4B4B4, endColorStr=0
+  );
+
+  /* IE8 uses -ms-filter for whatever reason... */
+  -ms-filter: progid:DXImageTransform.Microsoft.gradient(
+    gradientType=1, startColor=#B4B4B4, endColoStr=0
+  );
+}
+
+div.even {
+  border-radius: 24px;
+  -moz-border-radius: 24px;
+  -webkit-border-radius: 24px;
+  
+  /* webkit */
+  background-image: -webkit-gradient(
+    linear, right top, left top, 
+    from(rgba(180, 180, 180, 1.0)), 
+    to(rgba(180, 180, 180, 0))
+  );
+  
+  /* mozilla - FF3.6+ */
+  background-image: -moz-linear-gradient(
+    right center,
+    rgba(180, 180, 180, 1.0) 20%, 
+    rgba(180, 180, 180, 0) 95%
+  );
+
+  /* IE 5.5 - 7 */
+  filter: progid:DXImageTransform.Microsoft.gradient(
+    gradientType=1, startColor=0, endColorStr=#B4B4B4
+  );
+
+  /* IE8 uses -ms-filter for whatever reason... */
+  -ms-filter: progid:DXImageTransform.Microsoft.gradient(
+    gradientType=1, startColor=0, endColoStr=#B4B4B4
+  );
+}
+
+span {
+/*  border: 1px solid green;*/
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+span.avatar {
+/*  border: 1px solid blue;*/
+  width: 128px;
+  height: 128px;
+  vertical-align: top;
+}
+
+span.text {
+  width: 344px;
+  padding: 0 12px 0 12px;
+}
+
+div#buttons {
+  text-align: center;
+  margin-top: 24px;
+}
+
+div#buttons a {
+  padding: 6px 12px;
+  border: 1px solid #bbb;
+  font-weight: normal;
+  border-radius: 24px;
+  background-color: white;
+  background-image: -webkit-linear-gradient(#fff,#ddd);
+}
+
+div#buttons a:focus,
+div#buttons a:active {
+  background-image: -webkit-linear-gradient(#ddd,#fff);
+}
+
+div#buttons a:hover {
+  border: 1px solid #666;
+}
+
+abbr:nth-child(n)[title]:hover {
+  position: relative;
+  padding: 1px 5px; 
+  margin: -2px -6px;
+/*  color: #235; */
+  color: #000;
+  line-height: inherit;
+/*  border: 1px solid #93a3b9 !important;*/
+  border: 1px solid #a3a3a3 !important;
+  
+  border-radius: 0 8px 8px 0; 
+  
+  -moz-border-radius: 0 8px 8px 0; 
+  -moz-box-shadow: -1px 2px 1px rgba(0,0,0,.5);
+   
+  -webkit-border-top-right-radius: 8px; 
+  -webkit-border-bottom-right-radius: 8px;
+  -webkit-box-shadow: -1px 2px 1px rgba(0,0,0,.5);
+  
+/*  background-color: #93a3b9;*/
+  background-color: #b7b7b7;
+}
+
+abbr:nth-child(n)[title]:hover::before {
+  content: attr(title);
+  position: absolute; 
+  display: block;
+  height: 100%; 
+  top: -1px; 
+  right: 100%; 
+  padding: 0 5px 0 7px;
+/*  color: #456; */
+  color: #575757;
+  white-space: nowrap; 
+  text-indent: 0; 
+/*  border: 1px solid #c3d3e7;*/
+  border: 1px solid #a3a3a3;
+  
+  border-radius: 8px 0 0 8px;
+  
+  -moz-border-radius: 8px 0 0 8px;
+  -moz-box-shadow: -1px 2px 1px rgba(0,0,0,.5);
+  
+  -webkit-border-top-left-radius: 8px;
+  -webkit-border-bottom-left-radius: 8px;
+  -webkit-box-shadow: -1px 2px 1px rgba(0,0,0,.5);
+  
+/*  background-color: #c3d3e7;*/
+  background-color: #d8d8d8;
+}
+
+#footer {
+   text-align: center;
+   width: 95%;
+   margin: 24px;
+}
