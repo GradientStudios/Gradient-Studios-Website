@@ -1,0 +1,187 @@
+html, body {
+  margin: 0; 
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-family: sans-serif;
+  background: #cccccc url(../images/background.png);*/
+  /*background-color: #cccccc;*/
+}
+
+/*--Link Styles--*/
+a {
+  text-decoration: none;
+  border-bottom: 1px dotted;
+  font-weight: bold;
+  color: black;
+}
+
+a:hover {
+  border: none;
+}
+
+/*--Column Styles--*/
+ul.columns {
+  width: 720px;
+  list-style: none;
+  margin: 0 auto; 
+  padding: 0;
+}
+ul.columns li {
+  width: 220px;
+  height: 220px;
+  float: left; 
+  display: inline;
+  margin: 10px; 
+  padding: 0;
+  position: relative;
+  
+  background-color: rgba(35,31,32,0.6);
+  filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#99191617', EndColorStr='#99191617');
+  
+  border-bottom: 1px white solid;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  border-radius: 12px 12px 12px 12px;
+}
+ul.columns li div {
+  text-align: left;
+}
+ul.columns li:hover {z-index: 99;}
+
+/*--Thumbnail Styles--*/
+ul.columns li img {
+  position: relative;
+  top: 10px;
+  filter: alpha(opacity=30);
+  opacity: 0.3;
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=30)"; /*--IE8 Specific--*/
+}
+ul.columns li:hover img{
+  z-index: 999;
+  filter: alpha(opacity=100);
+  opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+
+/*--Details Style--*/
+ul.columns li .info {
+  position: absolute;
+  left: -10px; top: -10px;
+  padding: 220px 10px 20px;
+  width: 220px;
+  display: none;
+  background: #fff;
+  font-size: 1.2em;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  border-radius: 12px;
+}
+ul.columns li:hover .info {display: block;}
+
+ul.columns li h2 {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin: 0; padding: 10px 0;
+}
+ul.columns li p {padding: 0; margin: 0; font-size: 0.9em;}
+
+/*--Button Styles--*/
+div#buttons {
+  clear: both;
+  text-align: center;
+  padding-top: 24px;
+}
+
+div#buttons a {
+  padding: 6px 12px;
+  border: 1px solid #bbb;
+  font-weight: normal;
+  border-radius: 24px;
+  background-color: white;
+  background-image: -webkit-linear-gradient(#fff,#ddd);
+}
+
+div#buttons a:focus,
+div#buttons a:active {
+  background-image: -webkit-linear-gradient(#ddd,#fff);
+}
+
+div#buttons a:hover {
+  border: 1px solid #666;
+}
+
+/*--Abbr Styles--*/
+abbr:nth-child(n)[title]:hover {
+  position: relative;
+  padding: 1px 5px; 
+  margin: -2px -6px;
+/*  color: #235; */
+  color: #000;
+  line-height: inherit;
+/*  border: 1px solid #93a3b9 !important;*/
+  border: 1px solid #a3a3a3 !important;
+  
+  border-radius: 0 8px 8px 0; 
+  
+  -moz-border-radius: 0 8px 8px 0; 
+  -moz-box-shadow: -1px 2px 1px rgba(0,0,0,.5);
+   
+  -webkit-border-top-right-radius: 8px; 
+  -webkit-border-bottom-right-radius: 8px;
+  -webkit-box-shadow: -1px 2px 1px rgba(0,0,0,.5);
+  
+/*  background-color: #93a3b9;*/
+  background-color: #b7b7b7;
+}
+
+abbr:nth-child(n)[title]:hover::before {
+  content: attr(title);
+  position: absolute; 
+  display: block;
+  height: 100%; 
+  top: -1px; 
+  right: 100%; 
+  padding: 0 5px 0 7px;
+/*  color: #456; */
+  color: #575757;
+  white-space: nowrap; 
+  text-indent: 0; 
+/*  border: 1px solid #c3d3e7;*/
+  border: 1px solid #a3a3a3;
+  
+  border-radius: 8px 0 0 8px;
+  
+  -moz-border-radius: 8px 0 0 8px;
+  -moz-box-shadow: -1px 2px 1px rgba(0,0,0,.5);
+  
+  -webkit-border-top-left-radius: 8px;
+  -webkit-border-bottom-left-radius: 8px;
+  -webkit-box-shadow: -1px 2px 1px rgba(0,0,0,.5);
+  
+/*  background-color: #c3d3e7;*/
+  background-color: #d8d8d8;
+}
+
+/*--Footer Styles--*/
+#footer {
+   clear: both;
+   text-align: center;
+   width: 95%;
+   margin: 24px;
+}
+
+/*
+#overlay{
+  display: none;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+  background-color: rgba(0,0,0,0.8);
+  filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#CC000000', EndColorStr='#CC000000');
+}
+*/
