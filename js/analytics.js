@@ -1,8 +1,12 @@
 var account = '';
 var hostname = window.location.host;
 switch(hostname) {
-  case 'gradient-studios.com': { account = 'UA-20856190-1'; break; }
-  case 'gradientstudios.com': { account = 'UA-20856190-7'; break; }
+  case 'www.gradient-studios.com':
+    account = 'UA-20856190-1'; 
+    break;
+  case 'www.gradientstudios.com':
+    account = 'UA-20856190-7'; 
+    break;
   default: account = 'UA-20856190-1';
 }
 
