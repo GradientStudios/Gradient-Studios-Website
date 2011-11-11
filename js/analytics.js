@@ -1,6 +1,14 @@
+var account = '';
+var hostname = window.location.host;
+switch(hostname) {
+  case 'gradient-studios.com': { account = 'UA-20856190-1'; break; }
+  case 'gradientstudios.com': { account = 'UA-20856190-7'; break; }
+  default: account = 'UA-20856190-1';
+}
+
 var _gaq = _gaq || [];
-_gaq.push(['_setAccount', 'UA-20856190-1']);
-_gaq.push(['_setDomainName', '.gradient-studios.com']);
+_gaq.push(['_setAccount', account]);
+_gaq.push(['_setDomainName', '.' + hostname]);
 _gaq.push(['_trackPageview']);
 
 (function() {
