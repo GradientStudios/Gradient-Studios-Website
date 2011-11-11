@@ -58,16 +58,12 @@ div#holder {
 
 ul {
   width: 600px;
-  padding: 12px 0 0 0;
+  padding: 0;
   margin: 0;
 }
 
 li {
   list-style: none;
-}
-
-li#contact {
-  margin-top: 12px;
 }
 
 div#pic {
@@ -85,10 +81,6 @@ div#pic img {
   margin-left: auto;
   margin-right: auto;
   padding-top: 20%;
-}
-
-div.textblock {
-  margin-bottom: 12px;
 }
 
 .red {
@@ -154,9 +146,6 @@ div#buttons a:hover {
   li.alternate {
     background: #ddd;
   }
-  #contact {
-    margin-top: 24px;
-  }
   div#outer, div#wrapper, div#inner, div#holder {
     vertical-align: top;
     text-align: left;
@@ -164,18 +153,10 @@ div#buttons a:hover {
   div#holder {
     padding: 12px 12px 0 12px;
   }
-  div#buttons {
-    text-align: left;
-  }
   div#buttons a {
     border-width: 1px;
   }
   #footer {
     display: none;
   }
-}
-
-/* iPhone, Android rules here */
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-
 }

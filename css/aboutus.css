@@ -218,3 +218,19 @@ abbr:nth-child(n)[title]:hover::before {
    width: 95%;
    margin: 24px;
 }
+
+@media only screen and (max-width: 656px) {
+  img#logo {
+    width: 100%;
+  }
+  div#center {
+    width: auto;
+    padding: 12px 12px 0 12px;
+  }
+  span.avatar {
+    display: none;
+  }
+  span.text {
+    width: auto;
+  }
+}
