@@ -66,6 +66,10 @@ li {
   list-style: none;
 }
 
+li#contact {
+  margin-top: 12px;
+}
+
 div#pic {
   display: none;
   text-align: center;
@@ -101,12 +105,19 @@ div#buttons a {
   border: 1px solid #bbb;
   font-weight: normal;
   border-radius: 24px;
-  background-color: white;
+  background-color: #fff;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#dddddd');
+  background-image: -o-linear-gradient(#fff,#ddd);
+  background-image: -moz-linear-gradient(#fff,#ddd);
   background-image: -webkit-linear-gradient(#fff,#ddd);
 }
 
 div#buttons a:focus,
 div#buttons a:active {
+  background-color: #ddd;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#dddddd', endColorstr='#ffffff');
+  background-image: -o-linear-gradient(#ddd,#fff);
+  background-image: -moz-linear-gradient(#ddd,#fff);
   background-image: -webkit-linear-gradient(#ddd,#fff);
 }
 
@@ -128,4 +139,43 @@ div#buttons a:hover {
 * html #footer {
    position:absolute;
    top:expression((0-(footer.offsetHeight)+(document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight)+(ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop))+'px');
+}
+
+@media only screen and (max-width: 600px) {
+  #logoDiv img {
+    width: 100%;
+  }
+  ul {
+    width: auto;
+  }
+  li {
+    list-style: none;
+  }
+  li.alternate {
+    background: #ddd;
+  }
+  #contact {
+    margin-top: 24px;
+  }
+  div#outer, div#wrapper, div#inner, div#holder {
+    vertical-align: top;
+    text-align: left;
+  }
+  div#holder {
+    padding: 12px 12px 0 12px;
+  }
+  div#buttons {
+    text-align: left;
+  }
+  div#buttons a {
+    border-width: 1px;
+  }
+  #footer {
+    display: none;
+  }
+}
+
+/* iPhone, Android rules here */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+
 }

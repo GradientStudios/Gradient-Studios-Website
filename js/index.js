@@ -1,4 +1,12 @@
 $(document).ready(function() {
+  
+  var textBlock = '';
+  $('li').each(function() {
+    textBlock  = $(this).html().replace(/ ([^\-\s]+[^>])$/,'&nbsp;$1');
+    $(this).html(textBlock);
+  });
+  
+  $('#actions li:nth-child(odd)').addClass('alternate');
     
   if($("div#pic").css('display') == 'none') {
     
