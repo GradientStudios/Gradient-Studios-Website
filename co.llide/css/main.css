@@ -1958,7 +1958,7 @@ input, textarea, select {
 /*  START OF MEDIA QUERIES */
 
 /* Tablet Portrait size to standard 960 (devices and browsers) */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 980px) {
   
   .embed-container {
     position: relative;
