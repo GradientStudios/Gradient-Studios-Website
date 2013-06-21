@@ -1,0 +1,414 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<!--[if IE 7 ]>    <html class= "ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html class= "ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html class= "ie9"> <![endif]-->
+
+<!--[if lt IE 9]>
+   <script>
+      document.createElement('header');
+      document.createElement('nav');
+      document.createElement('section');
+      document.createElement('article');
+      document.createElement('aside');
+      document.createElement('footer');
+   </script>
+<![endif]-->
+
+<head>
+
+<!--Page Title-->
+<title>co.llide</title>
+<!--Meta Tags-->
+<meta charset="utf-8">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<!-- Set Viewport-->
+<meta name="viewport" content="user-scalable=no,initial-scale=1.0, maximum-scale=1.0 width=device-width" />
+<!-- Allows WebApp-->
+<meta name="apple-mobile-web-app-capable" content="yes" />
+
+<!--Main CSS-->
+<link rel="stylesheet" href="css/main.css" media="screen">
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.elastislide.js"></script>
+<script src="js/jquery.colorbox-min.js"></script>
+<script src="js/custom.js"></script>
+<script src="js/jquery.preloadcssimages.js"></script>
+
+<script type="text/javascript">
+function validateForm()
+{
+var x=document.forms["contact_form"]["fname"].value;
+if (x==null || x=="" || x=="First Name")
+  {
+  alert("Please enter your first name");
+  return false;
+  }
+var x=document.forms["contact_form"]["lname"].value;
+if (x==null || x=="" || x=="Last Name")
+  {
+  alert("Please enter your last name");
+  return false;
+  }
+var x=document.forms["contact_form"]["email"].value;
+var atpos=x.indexOf("@");
+var dotpos=x.lastIndexOf(".");
+if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length)
+  {
+  alert("Please supply a valid e-mail address");
+  return false;
+  }
+}
+</script>
+
+</head>
+
+<body>
+
+<!-- Start header top -->
+<header id="top">
+
+<!-- Start of top logo -->
+<div id="top_logo">
+<a href="#"><img src="img/logo.png" alt="top logo" /></a>
+
+</div><!-- End of top logo -->
+
+<!-- Start of top cta -->
+<div id="top_cta">
+
+<!-- Start of twitter -->
+<div id="twitter">
+<a target="_blank" href="https://twitter.com/co_llide"></a>
+
+</div><!-- End of twitter -->
+
+</div><!-- End of top cta -->
+
+<!-- Start of clear --><div class="clear"></div><!-- End of clear -->
+
+</header><!-- End of header top -->
+
+<!-- Start of full width border -->
+<div class="full_width_border">
+
+</div><!-- End of full width border -->
+
+<!-- Start of main content wrapper -->
+<div id="main_content_wrapper">
+
+<div id="ctawrapper">
+
+<!-- Start of cta text -->
+<section id="cta_text">
+A <span class="blue">multiplayer</span> spaceship battle with <span class="blue">physics</span> driven action, <span class="blue">custom</span> ships, and <span class="blue">instant</span> sharing: in your&nbsp;<span class="blue">browser<span>.
+
+<!-- Start of button group -->
+<section class="button_group">
+
+<!-- Start of black button -->
+<div class="black_button">
+
+<!-- Start of left bracket -->
+<div class="left_bracket">
+
+</div><!-- End of left bracket -->
+
+</div><!-- End of black button -->
+
+<!-- Start of green button right -->
+<div class="green_button_right">
+
+<a href="http://co.llide.com" target="_blank">Play Now</a>
+
+<!-- Start of right bracket -->
+<div class="right_bracket">
+
+</div><!-- End of right bracket -->
+
+</div><!-- End of green button right -->
+
+<!-- Start of light -->
+<div class="light">
+<strong>Free to play</strong> in Chrome or Firefox
+
+</div><!-- End of light -->
+
+</section><!-- End of button group -->
+
+</section><!-- End of cta text -->
+
+<!-- Start of cta image -->
+<aside id="cta_image">
+<iframe width="560" height="315" src="http://www.youtube.com/embed/KAZKpg1N2RQ" frameborder="0" allowfullscreen></iframe>
+
+</aside><!-- End of cta image -->
+
+</div>
+
+<!-- Start of carousel wrapper -->
+<section id="carousel" class="carousel-wrapper">
+
+<!-- Start of carosel -->
+<div class="carousel">
+
+<!-- Start of gallery ul -->
+<ul class="gallery">
+
+<li><a class="colorbox" href="images/screenshots/screen01_large.png"><img src="images/screenshots/screen01.png" alt="Image 1" /></a></li>
+<li><a class="colorbox" href="images/screenshots/screen02_large.png"><img src="images/screenshots/screen02.png" alt="Image 2" /></a></li>
+<li><a class="colorbox" href="images/screenshots/screen03_large.png"><img src="images/screenshots/screen03.png" alt="Image 3" /></a></li>
+<li><a class="colorbox" href="images/screenshots/screen04_large.png"><img src="images/screenshots/screen04.png" alt="Image 4" /></a></li>
+<li><a class="colorbox" href="images/screenshots/screen05_large.png"><img src="images/screenshots/screen05.png" alt="Image 5" /></a></li>
+<li><a class="colorbox" href="images/screenshots/screen06_large.png"><img src="images/screenshots/screen06.png" alt="Image 6" /></a></li>
+<li><a class="colorbox" href="images/screenshots/screen07_large.png"><img src="images/screenshots/screen07.png" alt="Image 7" /></a></li>
+<li><a class="colorbox" href="images/screenshots/screen08_large.png"><img src="images/screenshots/screen08.png" alt="Image 8" /></a></li>
+<li><a class="colorbox" href="images/screenshots/screen09_large.png"><img src="images/screenshots/screen09.png" alt="Image 9" /></a></li>
+<li><a class="colorbox" href="images/screenshots/screen10_large.png"><img src="images/screenshots/screen10.png" alt="Image 10" /></a></li>
+
+</ul><!-- End of gallery ul -->
+
+</div><!-- End of carousel -->
+
+</section><!-- End of carousel wrapper -->
+
+<!-- Start of clear --><div class="clear"></div><!-- End of clear -->
+
+<!-- Start of main cta -->
+<section class="main_cta">
+
+<h2>Build your ship... take on the galaxy!</h2>
+<p>Welcome to a fast-paced, multiplayer spaceship battle. <a href="http://co.llide.com" target="_blank">Play for free</a> right now in your browser.</p>
+
+<!-- Start of triangle hr -->
+<div class="triangle_hr">
+
+<!-- Start of triangle hr img -->
+<div class="triangle_hr_img">
+<img src="img/hrbreaker.png" height="13" width="16" alt="triangle" />
+
+</div><!-- End of triangle hr img -->
+
+</div><!-- End of triangle hr -->
+
+<!-- Start of one third first -->
+<article class="one_third_first">
+
+<!-- Start of benefit one -->
+<div class="benefit_one">
+<h6>Play in your browser. Right now.</h6>
+
+<p>There are no downloads and no special plug-ins. Simply head to the game in Chrome or Firefox and start playing. Your time is precious, we don't want you to wait. Open web technology makes this possible.</p>
+
+</div><!-- End of benefit one -->
+
+</article><!-- End of one third first -->
+
+<!-- Start of one third -->
+<article class="one_third">
+
+<!-- Start of benefit two -->
+<div class="benefit_two">
+<h6>Real-time physics. Real-time desctruction.</h6>
+
+<p>Pilot a ship where every fire of your thruster matters. Blast through opponents and watch their scrap scatter, or get blasted and fight to keep your ship under control.</p>
+
+</div><!-- End of benefit two -->
+
+</article><!-- End of one third -->
+
+<!-- Start of one third -->
+<article class="one_third">
+
+<!-- Start of benefit three -->
+<div class="benefit_three">
+<h6>Build your own custom&nbsp;spaceship.</h6>
+
+<p>The spaceship editor provides an evergrowing variety of building blocks, so players can create ships that run the gamut from graceful and deadly to awkward and hilarious.</p>
+
+</div><!-- End of benefit three -->
+
+</article><!-- End of one third -->
+
+<!-- Start of one third first -->
+<article class="one_third_first">
+
+<!-- Start of benefit four -->
+<div class="benefit_four">
+<h6>Sharing is caring.<br>And instant.</h6>
+
+<p>Each battle arena has a unique link. Every ship you make does, too. Copy and share those links however you like: Twitter, Facebook, instant message, email... Once your friend clicks, the battle is on.</p>
+
+</div><!-- End of benefit four -->
+
+</article><!-- End of one third first -->
+
+<!-- Start of one third -->
+<article class="one_third">
+
+<!-- Start of benefit five -->
+<div class="benefit_five">
+<h6>Active development. Alpha and beyond.</h6>
+
+<p>The game is currently in the alpha stage. This means there are features still being developed alongside some nasty game-breaking bugs. But we are working every day to make the game better, and we deeply care about input from you.</p>
+
+</div><!-- End of benefit five -->
+
+</article><!-- End of one third -->
+
+<!-- Start of one third -->
+<article class="one_third">
+
+<!-- Start of benefit six -->
+<div class="benefit_six">
+<h6>Support independent game development.</h6>
+
+<p>Working from the heart of Boston, Gradient Studios is a team of 5 like minds who love to push the boundaries of open web technology. We love games and we love the web, and nothing makes us happier than to bring you something fresh in your browser.</p>
+
+</div><!-- End of benefit six -->
+
+</article><!-- End of one third -->
+
+<!-- Start of clear --><div class="clear"></div><!-- End of clear -->
+
+</section><!-- End of main cta -->
+
+<hr />
+
+<!-- Start of main cta quote wrapper -->
+<section class="main_cta_quote_wrapper">
+<img src="img/quote-icon.png" height="56" width="47" alt="quote icon" />
+
+<!-- Start of main cta quote -->
+<div class="main_cta_quote">
+<h2>"I enjoyed playing during demo night, and I love the evolution the game has taken over the past year."</h2>
+
+<!-- Start of intro -->
+<div class="intro">
+Eitan Glinert, <span class="light">Fire Hose Games</span>
+
+</div><!-- End of intro -->
+
+</div><!-- End of main cta quote -->
+
+</section><!-- End of main cta quote wrapper -->
+
+<!-- Start of clear --><div class="clear"></div><!-- End of clear -->
+
+<!-- Start of call to action -->
+<div class="call_to_action">
+
+<!-- Start of button group -->
+<section class="button_group2">
+
+<!-- Start of black button -->
+<div class="black_button">
+
+<!-- Start of left bracket -->
+<div class="left_bracket">
+
+</div><!-- End of left bracket -->
+
+</div><!-- End of black button -->
+
+<!-- Start of green button right -->
+<div class="green_button_right">
+
+<a href="http://co.llide.com" target="_blank">Play Now</a>
+
+<!-- Start of right bracket -->
+<div class="right_bracket">
+
+</div><!-- End of right bracket -->
+
+</div><!-- End of green button right -->
+
+<!-- Start of light -->
+<div class="light">
+<strong>Free to play</strong> in Chrome or Firefox
+
+</div><!-- End of light -->
+
+</section><!-- End of button group -->
+
+</div><!-- End of call to action -->
+
+<!-- Start of clear --><div class="clear"></div><!-- End of clear -->
+
+<!-- Start of main cta quote wrapper -->
+<section class="main_cta_quote_wrapper">
+<img src="img/mail-icon.png" height="56" width="47" alt="mail icon" />
+
+<!-- Start of main cta quote -->
+<div class="main_cta_quote">
+<h2>Subscribe to our <span class="bold">newsletter</span> to get the latest <span class="bold">updates</span>!</h2>
+
+<form action="mailer.php" id="contact_form" method="post" onsubmit="return validateForm();">
+
+<ul>				
+
+<li class="name">
+<label>First Name<span class="required"></span></label>		
+<input type="text" name="fname" id="fname" value="First Name" onblur="if(this.value == '') { this.value = 'First Name'; }" onfocus="if(this.value == 'First Name') { this.value = ''; }" /> 
+</li>
+
+<li class="name">
+<label>Last Name<span class="required"></span></label>		
+<input type="text" name="lname" id="lname" value="Last Name" onblur="if(this.value == '') { this.value = 'Last Name'; }" onfocus="if(this.value == 'Last Name') { this.value = ''; }" /> 
+</li>
+
+<li class="email">
+<label>Email Address<span class="required"></span></label>					
+<input type="text" name="email" id="email" value="Email Address" class="requiredField email" onblur="if(this.value == '') { this.value = 'Email Address'; }" onfocus="if(this.value == 'Email Address') { this.value = ''; }" /> 
+</li>
+
+<li class="button"><input id="submitted" class="input-submit" type="submit" value="Subscribe" name="submit" />
+</li>
+
+</ul>
+
+<!-- Start of clear --><div class="clear"></div><!-- End of clear -->
+
+</form>
+
+<h3>Journalist? Take a look at our current <a href="http://www.gradientstudios.com/presskit/sheet/co.llide" target="_blank">presskit</a>.</h3>
+
+</div><!-- End of main cta quote -->
+
+<hr />
+
+<!-- Start of clear --><div class="clear"></div><!-- End of clear -->
+
+</section><!-- End of main cta quote wrapper -->
+
+<!-- Start of footer -->
+<footer id="bottom">
+
+<!-- Start of footer logo -->
+<div class="footer_logo">
+<a href="#"><img src="img/logo-small.png" height="41" width="169" alt="bottom logo"></a>
+
+<p><span class="copyright">&copy; Copyright 2013, All Rights Reserved by <a href="http://www.gradientstudios.com" target="_blank">Gradient Studios</a></span></p>
+
+</div><!-- End of footer logo -->
+
+<!-- Start of social -->
+<div class="social">
+<p><span class="copyright">Connect with us!</span></p>
+
+<!-- Start of twitter -->
+<div id="twitter">
+<a target="_blank" href="http://twitter.com/GradientStudios"></a>
+
+</div><!-- End of twitter -->
+
+</div><!-- End of social -->
+
+</footer><!-- End of footer bottom -->
+
+
+</body>
+</html>
