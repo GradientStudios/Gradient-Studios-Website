@@ -1997,7 +1997,7 @@ input, textarea, select {
   
   #cta_text {
     color: #484848;
-    float: left;
+    float: none;
     font-family: 'NunitoRegular';
     font-size: 28px;
     text-align: left;
